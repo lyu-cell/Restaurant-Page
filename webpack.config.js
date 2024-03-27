@@ -3,7 +3,7 @@ const path = require("path");
 const { Template } = require("webpack");
 
 module.exports = {
-    entry: ".src/index.js",
+    entry: "./src/index.js",
     devtool: "inline-source-map",
     output: {
         filename: "bundle.js",
@@ -17,5 +17,13 @@ module.exports = {
             inject: "head",
             scriptLoading: "defer",
         })
-    ] 
+    ],
+    module: {
+        rules: [
+            {
+                test: /\.css/i,
+                use: ["style-loader", "css-loader"],
+            },
+        ],
+    },
 };
