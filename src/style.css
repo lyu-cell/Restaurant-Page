@@ -9,13 +9,14 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: 100px;
-    border: 2px solid green;
 }
 
 nav {
     display: flex;
     grid-column: 2/3;
     align-items: center;
+    padding-top: 30px;
+    grid-gap: 5px;
 }
 
 button {
@@ -29,12 +30,28 @@ button {
 
 .logo {
     display: flex;
-    color: white;
+    color:  white;
     align-items: center;
     grid-column: 1/2;
-    margin-left: 50px;
+    justify-content: center;
     grid-row: 1/2;
     font-style: italic;
-    font-size: 40px;
+    font-size: 55px;
     font-weight: 600;
+}
+
+.reserve {
+    font-size: 30px;
+    font-weight: 400;
+    margin-right: 30px;
+    margin-bottom: 20px;
+    border: 1px solid white;
+}
+
+button:hover {
+    border: 1px solid white;
+}
+
+.reserve:hover{
+    background-color: rgb(165, 164, 164);
 }
