@@ -7,11 +7,11 @@ const header = (function() {
     const nav = document.querySelector("nav")
 
     // create elements here...
-    const homeBtn = document.createElement("button");
-    const menuBtn = document.createElement("button");
-    const contactBtn = document.createElement("button");
+    const homeBtn = document.createElement("div");
+    const menuBtn = document.createElement("div");
+    const contactBtn = document.createElement("div");
     const logo = document.createElement("div");
-    const reserveBtn = document.createElement("button");
+    const reserveBtn = document.createElement("div");
 
     // classes are added here...
     homeBtn.classList.add("homeBtn");
