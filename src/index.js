@@ -1,34 +1,30 @@
 import "./style.css"
+import {homePage} from "./homePage.js"
 
-function header() {
+const header = (function() {
     
     const header = document.querySelector("header");
-    const navBar = document.querySelector("nav");
-    
-    // elements are created here...
+    const nav = document.querySelector("nav")
+
+    // create elements here...
     const homeBtn = document.createElement("button");
     const menuBtn = document.createElement("button");
     const contactBtn = document.createElement("button");
-    const headLogo = document.createElement("div")
-    const reserve = document.createElement("button")
+    const logo = document.createElement("div")
 
+    // classes are added here...
     homeBtn.classList.add("homeBtn");
     menuBtn.classList.add("menuBtn");
     contactBtn.classList.add("contactBtn");
-    headLogo.classList.add("headLogo");
-    reserve.classList.add("reserve")
+    logo.classList.add("logo")
 
     homeBtn.textContent = "Home";
     menuBtn.textContent = "Menu";
-    contactBtn.textContent = "contact";
-    headLogo.textContent = "Lyu&Lunches";
-    reserve.textContent = "Reserve"
+    contactBtn.textContent = "Contact"
+    logo.textContent = "Lyu&Lunch"
 
-    navBar.appendChild(homeBtn)
-    navBar.appendChild(menuBtn)
-    navBar.appendChild(contactBtn)
-    navBar.appendChild(reserve)
-    header.appendChild(headLogo)
-}
-
-header()
+    header.appendChild(logo)
+    nav.appendChild(homeBtn)
+    nav.appendChild(menuBtn)
+    nav.appendChild(contactBtn)
+})()

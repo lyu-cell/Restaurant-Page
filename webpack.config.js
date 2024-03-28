@@ -8,7 +8,7 @@ module.exports = {
     output: {
         filename: "bundle.js",
         path: path.resolve(__dirname, "dist"),
-        clean: true,
+        clean: true
     },
     plugins: [
         new HtmlWebpackPlugin({
@@ -24,6 +24,10 @@ module.exports = {
                 test: /\.css/i,
                 use: ["style-loader", "css-loader"],
             },
+            {
+                test: /\.(jpg)$/i,
+                type: "asset/resource"
+            }
         ],
     },
 };
