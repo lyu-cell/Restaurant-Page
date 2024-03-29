@@ -1,5 +1,6 @@
 import "./style.css"
 import {homePage} from "./homePage.js"
+import {menu, menuPage} from "./menu.js"
 
 const header = (function() {
     
@@ -34,3 +35,16 @@ const header = (function() {
 })()
 
 homePage()
+
+const homeBtn = document.querySelector(".homeBtn")
+const menuBtn = document.querySelector(".menuBtn")
+
+homeBtn.addEventListener("click", () => {
+    document.querySelector(".subContainerMenu").remove()
+    homePage()
+})
+
+menuBtn.addEventListener("click", () => {
+    document.querySelector(".subContainer").remove()
+    menuPage()
+})

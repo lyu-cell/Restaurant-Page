@@ -6,6 +6,7 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: #09090b;
+    border-bottom: 1px solid rgb(94, 93, 93);
 }
 
 nav {
@@ -31,7 +32,7 @@ nav {
     color:  white;
     align-items: center;
     grid-column: 1/2;
-    justify-content: center;
+    padding-left: 63px;
     grid-row: 1/2;
     font-style: italic;
     font-size: 45px;
@@ -40,13 +41,12 @@ nav {
 
 .reserve {
     display: flex;
-    height: 35px;
+    height: 30px;
     width: 120px;
-    justify-content: center;
     align-items: center;
     font-size: larger;
     font-weight: 400;
-    margin-right: 50px;
+    margin-right: 64px;
     margin-bottom: 20px;
     border: 1px solid white;
     padding: 5px;
@@ -66,7 +66,7 @@ nav {
     display: flex;
     color: white;
     justify-content: center;
-    height: 85vh;
+    height: 86vh;
     background-image: url(mainBackgroundImg.jpg);
     background-size: 1024px 700px;
     background-repeat: no-repeat;
@@ -104,4 +104,41 @@ nav {
     font-weight: 700;
     background-color: black;
     border: 1px solid white;
+}
+
+
+
+/* styles for menu page are done here...*/
+
+.subContainerMenu {
+    display: flex;
+    justify-content: center;
+    height: 86vh;
+    background-color: #18181b;
+}
+
+.menuContainer {
+    display: grid;
+    padding-top: 80px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 80px;
+    grid-auto-flow: column;
+    width: 900px;
+    background-color: black;
+    gap: 20px;
+    overflow: scroll;
+}
+
+.steak {
+    display: flex;
+    background-image: url(stakePic.jpg);
+    background-repeat: no-repeat;
+    background-size: 400px;
+    background-position: center;
+}
+
+.menuItem {
+    width: 230px;
+    background-color: white;
 }
