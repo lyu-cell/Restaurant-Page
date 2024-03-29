@@ -24,7 +24,7 @@ const header = (function() {
     menuBtn.textContent = "Menu";
     contactBtn.textContent = "Contact"
     logo.textContent = "Lyu&Lunch"
-    reserveBtn.textContent = "Reserve"
+    reserveBtn.textContent = "Reserve A Seat"
 
     header.appendChild(logo)
     nav.appendChild(homeBtn)
@@ -32,3 +32,5 @@ const header = (function() {
     nav.appendChild(contactBtn)
     nav.appendChild(reserveBtn)
 })()
+
+homePage()
