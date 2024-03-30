@@ -9,8 +9,10 @@ function menuPage() {
     const menuContainer = document.createElement("div");
     const steak = document.createElement("div");
     const egg = document.createElement("div");
-    const potato = document.createElement("div");
+    const fish = document.createElement("div");
     const bread = document.createElement("div");
+    const steakTitle = document.createElement("div");
+
 
 
     // add classes here...
@@ -20,18 +22,17 @@ function menuPage() {
     steak.classList.add("menuItem")
     egg.classList.add("egg")
     egg.classList.add("menuItem")
-    potato.classList.add("potato")
-    potato.classList.add("menuItem")
+    fish.classList.add("fish")
+    fish.classList.add("menuItem")
     bread.classList.add("bread")
     bread.classList.add("menuItem")
-    
 
     // append elements here...
     content.appendChild(subContainer);
     subContainer.appendChild(menuContainer);
     menuContainer.appendChild(steak)
     menuContainer.appendChild(egg)
-    menuContainer.appendChild(potato)
+    menuContainer.appendChild(fish)
     menuContainer.appendChild(bread)
 }
 

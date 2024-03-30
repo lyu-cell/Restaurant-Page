@@ -1,6 +1,7 @@
 import "./style.css"
 import {homePage} from "./homePage.js"
-import {menu, menuPage} from "./menu.js"
+import {menuPage} from "./menu.js"
+import {contactPage} from "./contact.js";
 
 const header = (function() {
     
@@ -34,17 +35,33 @@ const header = (function() {
     nav.appendChild(reserveBtn)
 })()
 
-homePage()
 
 const homeBtn = document.querySelector(".homeBtn")
 const menuBtn = document.querySelector(".menuBtn")
 
+function cleanPage(element) {
+
+    if(element === "menu") {
+        document.querySelector(".subContainerMenu").remove()
+    } 
+    else if (element === "home") {
+        document.querySelector(".subContainer").remove()
+    }
+    else if (element === "contact") {
+        document.querySelector(".subContainerContact").remove()
+    }
+}
+
+contactPage()
+
 homeBtn.addEventListener("click", () => {
-    document.querySelector(".subContainerMenu").remove()
+    cleanPage("menu")
+    cleanPage("contact")
     homePage()
 })
 
 menuBtn.addEventListener("click", () => {
-    document.querySelector(".subContainer").remove()
+    cleanPage("home")
+    cleanPage("contact")
     menuPage()
 })

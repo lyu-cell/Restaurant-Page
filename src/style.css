@@ -67,7 +67,7 @@ nav {
     color: white;
     justify-content: center;
     height: 86vh;
-    background-image: url(mainBackgroundImg.jpg);
+    background-image: url(./assets/mainBackgroundImg.jpg);
     background-size: 1024px 700px;
     background-repeat: no-repeat;
     margin: 0;
@@ -130,15 +130,44 @@ nav {
     overflow: scroll;
 }
 
-.steak {
+.steak, .egg,
+.fish, .bread {
     display: flex;
-    background-image: url(stakePic.jpg);
     background-repeat: no-repeat;
-    background-size: 400px;
     background-position: center;
 }
+
+.fish {
+    background-image: url(assets/fish.avif);
+    background-size: 360px;
+}
+
+.steak {
+    background-image: url(assets/stakePic.jpg);
+    background-size: 400px;
+
+}
+
+.egg {
+    background-image: url(assets/egg.jpeg);
+    background-size: 355px;
+}
+
+
 
 .menuItem {
     width: 230px;
     background-color: white;
+}
+
+.bread {
+    background-image: url(assets/bread.jpg);
+    background-size: 310px;
+}
+
+/*contact page styles start from here*/
+
+.subContainerContact {
+    height: 86vh;
+    background-color: #18181b;
 }
