@@ -211,14 +211,15 @@ nav {
 }
 
 form {
-    display: flex;
-    border: 1px solid lawngreen;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border: 4px solid rgb(92, 92, 92);
+    background-color: #18181b;
     height: 215px;
-    width: 200px;
+    width: 220px;
     gap: 15px;
     color: white;
     padding: 20px;
-    flex-direction: column;
 }
 
 .contactHeadlineMain {
@@ -244,3 +245,41 @@ label {
     margin-right: 6px;
 }
 
+.infoPara {
+    margin-top: 30px;
+    align-self: center;
+    font-size: larger;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+input {
+    height: 10px;
+}
+
+.formSubmitBtn {
+    width: 80px;
+    height: 20px;
+    margin-top: 5px;
+    align-self: center;
+}
+
+.nameContainer {
+    display: flex;
+    margin-top: 10px;
+    flex-direction: column;
+    gap: 39px;
+}
+
+.inputContainer {
+    display: flex;
+    margin-top: 10px;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.formSubmitBtn {
+    grid-column: 1/3;
+    justify-self: center;
+    background-color: white;
+}

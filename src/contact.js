@@ -22,8 +22,13 @@ function contactPage() {
     const emailInput = document.createElement("input")
     const locationLabel = document.createElement("LABEL")
     const locationInput = document.createElement("input")
+    const infoPara = document.createElement("p")
+    const formSubmitBtn = document.createElement("button")
+    const nameContainer = document.createElement("div")
+    const inputContainer = document.createElement("div")
 
 
+    formSubmitBtn.textContent = "Submit"
     contactHeadlineMain.textContent  = "Contact US"
     contactHeadlineSub.textContent = "Got any questions? Feel free to reach out to us below!"
     numberInfo.textContent = "Number:  019********"
@@ -38,6 +43,7 @@ function contactPage() {
     locationLabel.setAttribute("for", "location")
     locationInput.setAttribute("id", "location")
     locationLabel.textContent = "Location: "
+    infoPara.textContent = "Contact Info"
 
     // add classes...
     content.setAttribute("id", "content");
@@ -49,6 +55,10 @@ function contactPage() {
     nameInput.className = "name"
     contactHeadlineMain.classList.add("contactHeadlineMain")
     contactHeadlineSub.classList.add("contactHeadlineSub")
+    infoPara.classList.add("infoPara")
+    formSubmitBtn.classList.add("formSubmitBtn")
+    inputContainer.classList.add("inputContainer")
+    nameContainer.classList.add("nameContainer")
 
     // append element...
     document.querySelector("body").appendChild(content);
@@ -60,15 +70,19 @@ function contactPage() {
     infoAndFormContainer.appendChild(form)
     contactHeadlineContainer.appendChild(contactHeadlineMain)
     contactHeadlineContainer.appendChild(contactHeadlineSub)
+    infoContainer.appendChild(infoPara)
     infoContainer.appendChild(numberInfo)
     infoContainer.appendChild(emailInfo)
     infoContainer.appendChild(locationInfo)
-    form.appendChild(nameLabel)
-    form.appendChild(nameInput)
-    form.appendChild(emailLabel)
-    form.appendChild(emailInput)
-    form.appendChild(locationLabel)
-    form.appendChild(locationInput)
+    form.appendChild(nameContainer)
+    form.appendChild(inputContainer)
+    nameContainer.appendChild(nameLabel)
+    nameContainer.appendChild(emailLabel)
+    nameContainer.appendChild(locationLabel)
+    inputContainer.appendChild(nameInput)
+    inputContainer.appendChild(emailInput)
+    inputContainer.appendChild(locationInput)
+    form.appendChild(formSubmitBtn)
 }
 
 export {contactPage}
