@@ -168,6 +168,79 @@ nav {
 /*contact page styles start from here*/
 
 .subContainerContact {
+    display: flex;
     height: 86vh;
     background-color: #18181b;
+    justify-content: center;
 }
+
+.formContainer {
+    height: 500px;
+    width: 800px;
+    margin-top: 20px;
+    background-image: url(formBackground.webp);
+}
+
+.contactHeadlineContainer {
+    height: 130px;
+    color: white;
+    justify-content: center;
+    text-align: center;
+}
+
+.infoAndFormContainer {
+    display: flex;
+    padding: 0px;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+.infoContainer {
+    display: flex;
+    border: 5px solid rgb(92, 92, 92);
+    height: 250px;
+    margin: 0px;
+    width: 200px;
+    background-color: #18181b;
+    color: white;
+    padding-left: 10px;
+    flex-direction: column;
+    font-style: italic;
+}
+
+form {
+    display: flex;
+    border: 1px solid lawngreen;
+    height: 215px;
+    width: 200px;
+    gap: 15px;
+    color: white;
+    padding: 20px;
+    flex-direction: column;
+}
+
+.contactHeadlineMain {
+    font-size: x-large;
+    font-weight: 800;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: rgb(214, 188, 37);
+}
+
+.contactHeadlineSub {
+    font-size: larger;
+    font-weight: 600;
+    margin: 0;
+}
+
+input {
+    width: 130px;
+}
+
+label {
+    font-weight: 600;
+    margin-right: 6px;
+}
+

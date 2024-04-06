@@ -38,30 +38,18 @@ const header = (function() {
 
 const homeBtn = document.querySelector(".homeBtn")
 const menuBtn = document.querySelector(".menuBtn")
-
-function cleanPage(element) {
-
-    if(element === "menu") {
-        document.querySelector(".subContainerMenu").remove()
-    } 
-    else if (element === "home") {
-        document.querySelector(".subContainer").remove()
-    }
-    else if (element === "contact") {
-        document.querySelector(".subContainerContact").remove()
-    }
-}
+const contactBtn = document.querySelector(".contactBtn")
 
 contactPage()
 
 homeBtn.addEventListener("click", () => {
-    cleanPage("menu")
-    cleanPage("contact")
     homePage()
 })
 
 menuBtn.addEventListener("click", () => {
-    cleanPage("home")
-    cleanPage("contact")
     menuPage()
+})
+
+contactBtn.addEventListener("click", () => {
+    contactPage()
 })

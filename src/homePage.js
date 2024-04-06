@@ -1,9 +1,12 @@
 function homePage() {
     
+    document.querySelector("#content").remove()
+
     // get elements here...
-    const content = document.querySelector("#content");
+    const body = document.querySelector("body")
 
     // elements are created here...
+    const content = document.createElement("div")
     const headlineContainer = document.createElement("div")
     const headline = document.createElement("div");
     const extraHerLine = document.createElement("div");
@@ -12,6 +15,7 @@ function homePage() {
 
 
     // classes to elements are added here...
+    content.setAttribute("id", "content")
     headline.classList.add("headline");
     extraHerLine.classList.add("extraHeadline")
     headlineContainer.classList.add("headlineContainer")
@@ -22,6 +26,7 @@ function homePage() {
     extraHerLine.textContent = "Order Which Ever item You Like From Our Vast Menu"
     orderBtn.textContent = "Order Now"
 
+    body.appendChild(content)
     content.appendChild(subContainer)
     subContainer.appendChild(headlineContainer)
     headlineContainer.appendChild(headline)
