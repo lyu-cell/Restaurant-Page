@@ -40,7 +40,7 @@ const homeBtn = document.querySelector(".homeBtn")
 const menuBtn = document.querySelector(".menuBtn")
 const contactBtn = document.querySelector(".contactBtn")
 
-contactPage()
+homePage()
 
 homeBtn.addEventListener("click", () => {
     homePage()
